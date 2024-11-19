@@ -1,0 +1,158 @@
+Sure! Here’s how you can manually box and unbox each primitive type in Java without relying on autoboxing and auto-unboxing:
+
+### Manual Boxing (Primitive to Wrapper)
+
+#### byte to Byte
+```java
+byte primitiveByte = 1;
+Byte wrappedByte = Byte.valueOf(primitiveByte); // Manual boxing
+```
+
+#### short to Short
+```java
+short primitiveShort = 2;
+Short wrappedShort = Short.valueOf(primitiveShort); // Manual boxing
+```
+
+#### int to Integer
+```java
+int primitiveInt = 3;
+Integer wrappedInt = Integer.valueOf(primitiveInt); // Manual boxing
+```
+
+#### long to Long
+```java
+long primitiveLong = 4L;
+Long wrappedLong = Long.valueOf(primitiveLong); // Manual boxing
+```
+
+#### float to Float
+```java
+float primitiveFloat = 5.0f;
+Float wrappedFloat = Float.valueOf(primitiveFloat); // Manual boxing
+```
+
+#### double to Double
+```java
+double primitiveDouble = 6.0;
+Double wrappedDouble = Double.valueOf(primitiveDouble); // Manual boxing
+```
+
+#### char to Character
+```java
+char primitiveChar = 'a';
+Character wrappedChar = Character.valueOf(primitiveChar); // Manual boxing
+```
+
+#### boolean to Boolean
+```java
+boolean primitiveBoolean = true;
+Boolean wrappedBoolean = Boolean.valueOf(primitiveBoolean); // Manual boxing
+```
+
+### Manual Unboxing (Wrapper to Primitive)
+
+#### Byte to byte
+```java
+Byte wrappedByte = Byte.valueOf((byte) 1);
+byte primitiveByte = wrappedByte.byteValue(); // Manual unboxing
+```
+
+#### Short to short
+```java
+Short wrappedShort = Short.valueOf((short) 2);
+short primitiveShort = wrappedShort.shortValue(); // Manual unboxing
+```
+
+#### Integer to int
+```java
+Integer wrappedInt = Integer.valueOf(3);
+int primitiveInt = wrappedInt.intValue(); // Manual unboxing
+```
+
+#### Long to long
+```java
+Long wrappedLong = Long.valueOf(4L);
+long primitiveLong = wrappedLong.longValue(); // Manual unboxing
+```
+
+#### Float to float
+```java
+Float wrappedFloat = Float.valueOf(5.0f);
+float primitiveFloat = wrappedFloat.floatValue(); // Manual unboxing
+```
+
+#### Double to double
+```java
+Double wrappedDouble = Double.valueOf(6.0);
+double primitiveDouble = wrappedDouble.doubleValue(); // Manual unboxing
+```
+
+#### Character to char
+```java
+Character wrappedChar = Character.valueOf('a');
+char primitiveChar = wrappedChar.charValue(); // Manual unboxing
+```
+
+#### Boolean to boolean
+```java
+Boolean wrappedBoolean = Boolean.valueOf(true);
+boolean primitiveBoolean = wrappedBoolean.booleanValue(); // Manual unboxing
+```
+
+### Example Code
+
+Here's a complete example demonstrating both manual boxing and unboxing for all primitive types:
+
+```java
+public class ManualBoxingUnboxingExample {
+    public static void main(String[] args) {
+        // Manual Boxing
+        byte primitiveByte = 1;
+        Byte wrappedByte = Byte.valueOf(primitiveByte); // Manual boxing
+
+        short primitiveShort = 2;
+        Short wrappedShort = Short.valueOf(primitiveShort); // Manual boxing
+
+        int primitiveInt = 3;
+        Integer wrappedInt = Integer.valueOf(primitiveInt); // Manual boxing
+
+        long primitiveLong = 4L;
+        Long wrappedLong = Long.valueOf(primitiveLong); // Manual boxing
+
+        float primitiveFloat = 5.0f;
+        Float wrappedFloat = Float.valueOf(primitiveFloat); // Manual boxing
+
+        double primitiveDouble = 6.0;
+        Double wrappedDouble = Double.valueOf(primitiveDouble); // Manual boxing
+
+        char primitiveChar = 'a';
+        Character wrappedChar = Character.valueOf(primitiveChar); // Manual boxing
+
+        boolean primitiveBoolean = true;
+        Boolean wrappedBoolean = Boolean.valueOf(primitiveBoolean); // Manual boxing
+
+        // Manual Unboxing
+        byte unboxedByte = wrappedByte.byteValue(); // Manual unboxing
+        short unboxedShort = wrappedShort.shortValue(); // Manual unboxing
+        int unboxedInt = wrappedInt.intValue(); // Manual unboxing
+        long unboxedLong = wrappedLong.longValue(); // Manual unboxing
+        float unboxedFloat = wrappedFloat.floatValue(); // Manual unboxing
+        double unboxedDouble = wrappedDouble.doubleValue(); // Manual unboxing
+        char unboxedChar = wrappedChar.charValue(); // Manual unboxing
+        boolean unboxedBoolean = wrappedBoolean.booleanValue(); // Manual unboxing
+
+        // Print results
+        System.out.println("Primitive byte: " + unboxedByte);
+        System.out.println("Primitive short: " + unboxedShort);
+        System.out.println("Primitive int: " + unboxedInt);
+        System.out.println("Primitive long: " + unboxedLong);
+        System.out.println("Primitive float: " + unboxedFloat);
+        System.out.println("Primitive double: " + unboxedDouble);
+        System.out.println("Primitive char: " + unboxedChar);
+        System.out.println("Primitive boolean: " + unboxedBoolean);
+    }
+}
+```
+
+This example demonstrates how to manually box and unbox each primitive type to and from their corresponding wrapper classes.
